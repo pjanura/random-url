@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Website Redirect</title>
+  <style>
+      body {
+          font-family: Arial, sans-serif;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          margin: 0;
+          background-color: #f0f0f0;
+      }
+
+      button {
+          padding: 15px 30px;
+          font-size: 18px;
+          color: white;
+          background-image: linear-gradient(to right, #6e48aa, #9d50bb);
+          border: none;
+          border-radius: 8px;
+          cursor: pointer;
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      button:hover {
+          background-image: linear-gradient(to left, #6e48aa, #9d50bb);
+          box-shadow: 0 6px 12px 0 rgba(0,0,0,0.3);
+          transform: translateY(-2px);
+      }
+
+      button:active {
+          transform: translateY(1px);
+          box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+      }
+  </style>
+</head>
+<body>
+    <button onclick="randomRedirect()">Go to a Random Philosopher</button>
+
+    <script>
+        // Inline JavaScript
+        function randomRedirect() {
+            var websites = [
+                "https://app.humy.ai/projects/6a4e073e-76b1-4dba-a95e-b08bae2fc65f?cid=google-oauth2|101840439246020915317",
+              <!-- Aristoteles -->
+                "https://app.humy.ai/projects/5eb8b414-78f6-4029-a691-f011f9d643f3?cid=google-oauth2|101840439246020915317",
+              <!-- Bentham -->
+                "https://app.humy.ai/projects/4f9e745e-c75e-4fae-8ed5-abc16c0e457e?cid=google-oauth2|101840439246020915317",
+              <!-- Mill -->
+              "https://app.humy.ai/projects/9d1201e7-5be4-4b3a-836d-04948fa0334b?cid=google-oauth2|101840439246020915317",
+              <!-- Kant -->
+               "https://app.humy.ai/projects/78980c81-d985-4881-b713-647e94cd37b0?cid=google-oauth2|101840439246020915317",
+              <!-- Singer -->
+                // Add more URLs here
+            ];
+            var randomIndex = Math.floor(Math.random() * websites.length);
+            window.location.href = websites[randomIndex];
+        }
+    </script>
+</body>
+</html>

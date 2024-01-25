@@ -2,49 +2,48 @@
 <html>
 <head>
     <title>Random Website Redirect</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-        }
+    /* style.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(to right, #6dd5ed, #2193b0), url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+    background-size: cover;
+}
 
-        button {
-            padding: 15px 30px;
-            font-size: 18px;
-            color: white;
-            background-image: linear-gradient(to right, #6e48aa, #9d50bb);
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-image: linear-gradient(to right, #6e48aa, #9d50bb);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
-        button:hover {
-            background-image: linear-gradient(to left, #6e48aa, #9d50bb);
-            box-shadow: 0 6px 12px 0 rgba(0,0,0,0.3);
-            transform: translateY(-2px);
-        }
+button:hover {
+    background-image: linear-gradient(to left, #6e48aa, #9d50bb);
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,0.3);
+    transform: translateY(-2px);
+}
 
-        button:active {
-            transform: translateY(1px);
-            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
-        }
+button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+}
 
-        /* Media Query for Mobile Devices */
-        @media (max-width: 600px) {
-            button {
-                padding: 20px 40px;
-                font-size: 20px;
-                border-radius: 10px;
-            }
-        }
-    </style>
+@media (max-width: 600px) {
+    button {
+        padding: 20px 40px;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+}
 </head>
 <body>
     <button onclick="randomRedirect()">Go to a Random Website</button>

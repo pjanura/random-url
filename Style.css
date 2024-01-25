@@ -6,7 +6,8 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-image: linear-gradient(to right, #6dd5ed, #2193b0), url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+    background-size: cover;
 }
 
 button {
